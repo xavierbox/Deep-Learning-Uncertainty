@@ -20,7 +20,7 @@ of obtaining a “multi-frequency solution” in the numerical modelling of syst
  
  # Methodology   
 ![](/network.PNG)
-*Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
+Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
 operated on stress and mechanical properties in 3D. Stress was sampled from coarse 
 cells and E,ν were sampled from the high-resolution model. The outputs of the 
 convolutions were flattened and merged with  pressure and overburden load and passed 
