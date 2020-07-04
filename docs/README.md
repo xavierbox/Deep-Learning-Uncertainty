@@ -21,7 +21,7 @@ of obtaining a “multi-frequency solution” in the numerical modelling of syst
  
  
 # Methodology   
-![](/network.PNG)
+![](/images/network.PNG)
 <p>Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
 operated on stress and mechanical properties in 3D. Stress was sampled from coarse 
 cells and E,ν were sampled from the high-resolution model. The outputs of the 
@@ -29,7 +29,7 @@ convolutions were flattened and merged with  pressure and overburden load and pa
 to a stage of  fully connected layers (see paper)</p>
 
 # Results  
-![](/FrontPage2.png)
+![](/images/FrontPage2.png)
 <p>Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse 
 model used for training. B: Cross horizontal section of the correct solution. 
 C: Projections along a vertical line and zoomed-in view. Filled curve corresponds 
