@@ -1,5 +1,5 @@
 
-# Just starting the project and the repo
+# Just starting the project and the repo...
 
 # This is an <h1> tag
 ## This is an <h2> tag
