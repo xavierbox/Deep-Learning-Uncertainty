@@ -16,13 +16,7 @@ of obtaining a “multi-frequency solution” in the numerical modelling of syst
  via a worked example.
  
  # Methodology   
-![](/images/S1Example.PNG)
-*Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse model 
-used for training. B: Cross horizontal section of the correct solution. 
-C: Projections along a vertical line and zoomed-in view. Filled curve corresponds to 
-the correct solution and the dashed line to the coarse model used for training. 
-
-![](/images/network.PNG)
+![](/network.PNG)
 *Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
 operated on s1,s2,E,ν, all sampled from 27 cells. Stress was sampled from coarse 
 cells and E,ν were sampled from the high-resolution model. The outputs of the convolutions 
