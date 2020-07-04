@@ -31,12 +31,15 @@ _You **can** combine them_
 * Item 2
   * Item 2a
   * Item 2b
-  
+
+
+# Methodology   
 ![GitHub Logo](/images/S1Example.PNG)
 *Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse model 
 used for training. B: Cross horizontal section of the correct solution. 
 C: Projections along a vertical line and zoomed-in view. Filled curve corresponds to 
 the correct solution and the dashed line to the coarse model used for training. 
+
 
 ![GitHub Logo](/images/network.PNG)
 *Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
@@ -45,6 +48,9 @@ cells and E,ν were sampled from the high-resolution model. The outputs of the c
 were flattened and merged with  pressure and overburden load and passed to a stage of  fully connected 
 layers (see paper)
 
-
+# Results 
+![GitHub Logo](/images/FrontPage2.png)
+* Zoomed-in view of the fracture gradient projected on a vertical  plane. Coarse (left)  and high-resolution 
+(middle) 3D finite element models and fracture gradient predictions in the 3D model (right).  
 
 
