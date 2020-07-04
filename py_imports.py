@@ -12,22 +12,17 @@ from pandas.api.types import is_string_dtype
 from pandas.api.types import is_numeric_dtype
 
 import numpy as np; 
- 
 import random
 from numpy.random import seed
 
-
 from IPython.lib.deepreload import reload as dreload
 from IPython.display import display
-
 import PIL, os,  math, collections, threading, json,  random, scipy#, cv2 #bcolz,
-
 import IPython, warnings, pdb  #,graphviz,  sklearn_pandas, 
 import contextlib
 from abc import abstractmethod
 from glob import glob, iglob
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
-
 
 from itertools import chain
 from functools import partial
@@ -40,9 +35,6 @@ from PIL import Image, ImageEnhance, ImageOps
 from operator import itemgetter, attrgetter
 from pathlib import Path
 from distutils.version import LooseVersion
-
-
-
 
 np.set_printoptions(precision=5, linewidth=110, suppress=True)
 
@@ -57,8 +49,6 @@ def setSeeds(seedNumber):
 
 def setSeed(seedNumber):
     setSeeds(seedNumber)
-
-
     
 def in_notebook(): return IPKernelApp.initialized()
 
