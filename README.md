@@ -15,6 +15,9 @@ of obtaining a “multi-frequency solution” in the numerical modelling of syst
  The  paper discusses the benefits and drawbacks of the method and illustrates its applicability 
  via a worked example.
  
+ # Draft paper
+ https://drive.google.com/file/d/1vew6OoRC5vxERwdCl27J2xvy-yxNpib0/view?usp=sharing
+ 
  # Methodology   
 ![](/network.PNG)
 *Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
