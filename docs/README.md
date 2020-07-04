@@ -19,7 +19,7 @@ _You **can** combine them_
   * Item 2a
   * Item 2b
   
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/FrontPage2.png)
 Format: ![Alt Text](url)
 
 http://github.com - automatic!
