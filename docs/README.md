@@ -16,7 +16,9 @@ of obtaining a “multi-frequency solution” in the numerical modelling of syst
  via a worked example.
  
 # Draft paper
- https://drive.google.com/file/d/1vew6OoRC5vxERwdCl27J2xvy-yxNpib0/view?usp=sharing
+ <a href="https://drive.google.com/file/d/1vew6OoRC5vxERwdCl27J2xvy-yxNpib0/view?usp=sharing">link </a>
+ 
+ 
  
 # Methodology   
 ![](/network.PNG)
