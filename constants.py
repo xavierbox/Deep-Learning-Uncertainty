@@ -1,2 +1,0 @@
-seedNumber = 42 
-
