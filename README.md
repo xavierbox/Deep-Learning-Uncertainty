@@ -1,4 +1,6 @@
-# Deep Learning for Uncertainty in Stress Modelling 
+﻿# Deep Learning for Uncertainty in Stress Modelling 
+
+
 
 # The project 
 This project proposes a methodology to estimate stress in the subsurface by a hybrid method 
