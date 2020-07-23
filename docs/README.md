@@ -12,13 +12,12 @@ one could correlate these large-scale (planet-wide) information to the local and
 it is not obvious how to do so. The large-scale models cover a vast area but the resolution is coarse. The local stations provide 
 a finer time and space resolution (sometimes) but cover little extent. 
 
-##### Geotechnics 
-The aforementioned problem is found everywhere in science and engineering. We basically need to change the name of the variables and 
-the problem is the same in other fields. In geotecnical applications, modelling stress at different length scales is just an 
-example that will be used in this project. The methodology presented, however, is of general application.  
+The aforementioned problem is found everywhere in science and engineering. In  <b> Geotecnics </b> we basically need to 
+change the name of the variables (temperature to stress) and the problem is the same. Modelling stress at different 
+length scales will be the objective of this project. The methodology presented, however, is of general application. At present, 
+an ongoing project is exploring the potential of applying this technique with some adaptations in finance. 
 
-##### Finance  
-
+##### Method  
 
 This project proposes a methodology to estimate 3D geo-spatial field (such as stress in the subsurface) by a hybrid 
 method combining finite element modelling and neural networks. 
@@ -29,12 +28,14 @@ The second solution provides the fine-grained details introduced by the heteroge
 parameters at the fine scale. 
  
 This “high-frequency” solution is estimated via neural networks pre-trained with partial 
-solutions obtained in high-resolution finite-element models. When the coarse finite element 
-solutions are combined with the neural network estimates, the results are within  a 2% 
-of error of the results that would be computed with high-resolution finite element models.
+solutions obtained in high-resolution finite-element models. Such a model is indeed a transformation rule 
+in-between scales. If found, it can be applied to the large-scale solutions to predict the high-resolution 
+information. 
 
- 
-#### There is a draft paper that can be found here: 
+Preliminary results obtained are within  a 2% of error. 
+
+
+<b>There is a draft paper that can be found here:</b> 
  <a href="https://drive.google.com/file/d/1vew6OoRC5vxERwdCl27J2xvy-yxNpib0/view?usp=sharing">
 Physics-Informed Neural Networks for Multi-Scale Stress Modelling in Geological Structures
 </a>
@@ -49,7 +50,7 @@ cells and E,ν were sampled from the high-resolution model. The outputs of the
 convolutions were flattened and merged with  pressure and overburden load and passed 
 to a stage of  fully connected layers (see paper)</p>
 
-## Results  
+##### Preliminary results  
 ![](FrontPage2.png)
 <p>Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse 
 model used for training. B: Cross horizontal section of the correct solution. 
