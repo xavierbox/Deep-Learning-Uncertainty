@@ -43,14 +43,13 @@ to a stage of  fully connected layers (see paper)</p>
 
 #### Preliminary results 
 Preliminary results obtained are within  a 2% of error. 
+
 ![](FrontPage2.png)
-<p>Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse 
-model used for training. B: Cross horizontal section of the correct solution. 
-C: Projections along a vertical line and zoomed-in view. Filled curve corresponds 
-to the correct solution and the dashed line to the coarse model used for training. 
+<p>Coarse model used for training, correct results and predictions in high resolution 
 </p>
 
 <b>There is a draft paper that can be found here:</b> 
+
  <a href="https://drive.google.com/file/d/1vew6OoRC5vxERwdCl27J2xvy-yxNpib0/view?usp=sharing">
 Physics-Informed Neural Networks for Multi-Scale Stress Modelling in Geological Structures
 </a>
@@ -58,7 +57,9 @@ Physics-Informed Neural Networks for Multi-Scale Stress Modelling in Geological 
 
 #### How to reproduce these results, or how to apply the method in other fields?
 
-##### Data Processing. Workflow step 1
+#### Workflow
+
+###### Workstep 1: Load raw data, basic processing
 ![](/images/raw_data_step1.PNG)
 
 In this project the data comes straingt from a software package in a legacy uncompressed format GRDCL. The data is in good shape so little manipulaion 
@@ -98,4 +99,10 @@ Finally the code stores the pre-processed data as a feather.
 Once all the files are stored as feathers, the workflow continues with extra pre-processing steps before the data 
 is in the format needed for the neural network training. 
 
+
+###### Workstep 2: Preparing the dataset for training the NN
+
+(...)
+
 #### The full workflow is long. It will be published here little by little. 
+
