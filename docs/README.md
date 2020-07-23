@@ -30,7 +30,7 @@ parameters at the fine scale.
 This “high-frequency” solution is estimated via neural networks pre-trained with partial 
 solutions obtained in high-resolution finite-element models. Such a model is indeed: 
 
-<b>a set of transformation rules</b><i> T </i> 
+<b>A set of transformation rules</b><i> T </i> 
 
 in-between scales. If found, it can be applied to the large-scale solutions to predict the high-resolution 
 information. 
