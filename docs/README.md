@@ -46,7 +46,7 @@ The data comes straingth from Petrel software platform. The file format is GRDCL
 The parsing converts the information inside the files into several pandas dataframes for easy processing. The parser in itself just have one 
 static method that receives as a string the input file and returns a data frame:
 
-```
+```python
 class EclipseFileParser:
     
     @staticmethod 
@@ -55,14 +55,15 @@ class EclipseFileParser:
 ```
 
 This is called in the few first cells of the notebook 
-```
+
+```python
 data_raw = EclipseFileParser.PetrelEclipseKeywords_to_pandas( data_file );
 ```
 
 Although the data is in good shape, some minimal checking and processing is still due. 
 Here some basic checking of ranges is done:
 
-```
+```python
 def is_positive_delegate( collection )-> bool: 
     result =any( [c.min()<0 for c in collection])
     return result 
