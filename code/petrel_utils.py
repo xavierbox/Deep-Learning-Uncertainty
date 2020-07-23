@@ -7,7 +7,7 @@ import sys
 class EclipseFileParser:
     
     @staticmethod 
-    def PetrelEclipseKeywords_to_pandas( file_name :str  )->pd.DataFrame:
+    def eclipse_to_pandas( file_name :str  )->pd.DataFrame:
         """
         Converts to a pandas dataframe the data stored as a Petrel file.
         Note that the file format includes * and other characters that have 
