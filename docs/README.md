@@ -31,7 +31,7 @@ convolutions were flattened and merged with  pressure and overburden load and pa
 to a stage of  fully connected layers (see paper)</p>
 
 ### Results  
-![](/images/FrontPage2.png)
+![](FrontPage2.png)
 <p>Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse 
 model used for training. B: Cross horizontal section of the correct solution. 
 C: Projections along a vertical line and zoomed-in view. Filled curve corresponds 
