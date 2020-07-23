@@ -4,8 +4,7 @@
 A challenge found in many areas of science and engineering is in the correlation of 3D spatial data collected 
 at different scales. 
 
-In ##### Environmental sciences 
-In environmental sciences, for instance, climate data is collected in local monitoring stations 
+In <b> Environmental sciences </b> for instance, climate data is collected in local monitoring stations 
 (fine and high-resolution scale) but that only provides information at discrete locations. For the prediction of temperature 
 and rainfall everywhere else, some sort of interpolation is needed. We could argue that the information collected 
 via satelite images and large scale simulators (that sometimes take days to run) can be used to fill the gaps as long as 
