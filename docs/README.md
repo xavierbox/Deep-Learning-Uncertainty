@@ -35,7 +35,7 @@ solutions obtained in high-resolution finite-element models. Such a model is ind
 in-between scales. If found, it can be applied to the large-scale solutions to predict the high-resolution 
 information. 
 
-![](/images/transformation_rules.PNG)
+![](/images/transformation_rules.png)
 <p>Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
 operated on large-scale and fine-scale variables.  The outputs of the 
 convolutions were flattened and merged with  pressure and overburden load and passed 
