@@ -37,10 +37,8 @@ model used for training. B: Cross horizontal section of the correct solution.
 C: Projections along a vertical line and zoomed-in view. Filled curve corresponds 
 to the correct solution and the dashed line to the coarse model used for training. 
 </p>
-
-    
+  
 ### Details
-
 #### Data Processing. Workflow step 1
 ![](/images/raw_data_step1.PNG)
 
@@ -89,5 +87,9 @@ print( f"Any stiffness negative? {check( eff, is_positive_delegate )} ")
 
 eff=[ data_raw[col] for col in data_raw.columns if "POISS" in col ]
 print( f"Any out-of-range Poisson's ratio? { is_condition(eff, lam
+```
+Finally the code stores the pre-processed data as a feather.
+```
+ %time data_raw.to_feather(output_file_name)
 ```
 
