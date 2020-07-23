@@ -42,6 +42,8 @@ to the correct solution and the dashed line to the coarse model used for trainin
 ### Details
 
 #### Data Processing. Workflow step 1
+![](/images/raw_data_step1.PNG)
+
 The data comes straingth from Petrel software platform. The file format is GRDCL. The data is in good shape so little manipulaion is needed. 
 The parsing converts the information inside the files into several pandas dataframes for easy processing. The parser in itself just have one 
 static method that receives as a string the input file and returns a data frame:
