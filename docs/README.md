@@ -17,7 +17,7 @@ change the name of the variables (temperature to stress) and the problem is the 
 length scales will be the objective of this project. The methodology presented, however, is of general application. At present, 
 an ongoing project is exploring the potential of applying this technique with some adaptations in finance. 
 
-##### Method  
+#### Method  
 
 This project proposes a methodology to estimate 3D geo-spatial field (such as stress in the subsurface) by a hybrid 
 method combining finite element modelling and neural networks. 
@@ -41,7 +41,7 @@ operated on large-scale and fine-scale variables.  The outputs of the
 convolutions were flattened and merged with  pressure and overburden load and passed 
 to a stage of  fully connected layers (see paper)</p>
 
-#####Preliminary results 
+#### Preliminary results 
 Preliminary results obtained are within  a 2% of error. 
 ![](FrontPage2.png)
 <p>Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse 
@@ -56,9 +56,9 @@ Physics-Informed Neural Networks for Multi-Scale Stress Modelling in Geological 
 </a>
  
 
-## How to reproduce these results, or how to apply the method in other fields?
+#### How to reproduce these results, or how to apply the method in other fields?
 
-### Data Processing. Workflow step 1
+##### Data Processing. Workflow step 1
 ![](/images/raw_data_step1.PNG)
 
 In this project the data comes straingt from a software package in a legacy uncompressed format GRDCL. The data is in good shape so little manipulaion 
