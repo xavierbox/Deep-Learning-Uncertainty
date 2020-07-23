@@ -28,36 +28,34 @@ The second solution provides the fine-grained details introduced by the heteroge
 parameters at the fine scale. 
  
 This “high-frequency” solution is estimated via neural networks pre-trained with partial 
-solutions obtained in high-resolution finite-element models. Such a model is indeed a transformation rule 
+solutions obtained in high-resolution finite-element models. Such a model is indeed: 
+
+<b>a set of transformation rules</b><i> T </i> 
+
 in-between scales. If found, it can be applied to the large-scale solutions to predict the high-resolution 
 information. 
 
-Preliminary results obtained are within  a 2% of error. 
-
-
-<b>There is a draft paper that can be found here:</b> 
- <a href="https://drive.google.com/file/d/1vew6OoRC5vxERwdCl27J2xvy-yxNpib0/view?usp=sharing">
-Physics-Informed Neural Networks for Multi-Scale Stress Modelling in Geological Structures
-</a>
- 
- 
- 
-## Methodology   
-![](/images/network.PNG)
+![](/images/transformation_rules.PNG)
 <p>Neural network used. Four independent 3D valid convolutions using a (2,2) kernel  
-operated on stress and mechanical properties in 3D. Stress was sampled from coarse 
-cells and E,ν were sampled from the high-resolution model. The outputs of the 
+operated on large-scale and fine-scale variables.  The outputs of the 
 convolutions were flattened and merged with  pressure and overburden load and passed 
 to a stage of  fully connected layers (see paper)</p>
 
-##### Preliminary results  
+#####Preliminary results 
+Preliminary results obtained are within  a 2% of error. 
 ![](FrontPage2.png)
 <p>Effective minimum principal stress σ_1. A: Cross horizontal section of the coarse 
 model used for training. B: Cross horizontal section of the correct solution. 
 C: Projections along a vertical line and zoomed-in view. Filled curve corresponds 
 to the correct solution and the dashed line to the coarse model used for training. 
 </p>
-  
+
+<b>There is a draft paper that can be found here:</b> 
+ <a href="https://drive.google.com/file/d/1vew6OoRC5vxERwdCl27J2xvy-yxNpib0/view?usp=sharing">
+Physics-Informed Neural Networks for Multi-Scale Stress Modelling in Geological Structures
+</a>
+ 
+
 ## How to reproduce these results, or how to apply the method in other fields?
 
 ### Data Processing. Workflow step 1
