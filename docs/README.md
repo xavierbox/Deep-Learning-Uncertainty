@@ -61,33 +61,15 @@ data_raw = EclipseFileParser.PetrelEclipseKeywords_to_pandas( data_file );
 ```
 
 Although the data is in good shape, some minimal checking and processing is still due. 
-Here some basic checking of ranges is done:
+Here is one example of the code in the notebook performing a basic check. 
 
 ```python
-def is_positive_delegate( collection )-> bool: 
-    result =any( [c.min()<0 for c in collection])
-    return result 
-
-def is_condition( collection, condition )-> bool: 
-    result =any( [condition(c) for c in collection])
-    return result 
-
-def any_nans( df: pd.DataFrame )->bool: 
-    return any( df.isnull().sum() > 0 )
-             
-def check( df: object, checker )->bool:
-    return checker( df )
-    
-print( f"Any nans ? {check( data_raw, any_nans )} ")
-
-eff=[ data_raw[col] for col in data_raw.columns if "EFF" in col or "PRESS" in col ]
-print( f"Any stress negative? {check( eff, is_positive_delegate )} ")
-
-eff=[ data_raw[col] for col in data_raw.columns if "YOUNG" in col ]
-print( f"Any stiffness negative? {check( eff, is_positive_delegate )} ")
+(...)
 
 eff=[ data_raw[col] for col in data_raw.columns if "POISS" in col ]
-print( f"Any out-of-range Poisson's ratio? { is_condition(eff, lam
+print( f"Any out-of-range Poisson's ratio? { is_condition(eff, lambda item: any(item <0.1) or any(item >0.5)  ) } ")
+(...)
+
 ```
 Finally the code stores the pre-processed data as a feather.
 ```
