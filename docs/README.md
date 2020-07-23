@@ -4,6 +4,7 @@
 A challenge found in many areas of science and engineering is in the correlation of 3D spatial data collected 
 at different scales. 
 
+In ##### Environmental sciences 
 In environmental sciences, for instance, climate data is collected in local monitoring stations 
 (fine and high-resolution scale) but that only provides information at discrete locations. For the prediction of temperature 
 and rainfall everywhere else, some sort of interpolation is needed. We could argue that the information collected 
@@ -12,9 +13,13 @@ one could correlate these large-scale (planet-wide) information to the local and
 it is not obvious how to do so. The large-scale models cover a vast area but the resolution is coarse. The local stations provide 
 a finer time and space resolution (sometimes) but cover little extent. 
 
-This problem is found everywhere in science and engineering. We basically need to change the name of the variables and 
+##### Geotechnics 
+The aforementioned problem is found everywhere in science and engineering. We basically need to change the name of the variables and 
 the problem is the same in other fields. In geotecnical applications, modelling stress at different length scales is just an 
 example that will be used in this project. The methodology presented, however, is of general application.  
+
+##### Finance  
+
 
 This project proposes a methodology to estimate 3D geo-spatial field (such as stress in the subsurface) by a hybrid 
 method combining finite element modelling and neural networks. 
