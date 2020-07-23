@@ -45,7 +45,6 @@ to a stage of  fully connected layers (see paper)</p>
 Preliminary results obtained are within  a 2% of error. 
 
 ![](/images/FrontPage2.png) 
-<p>Coarse model used for training, correct results and predictions in high resolution </p>
 
 <b>There is a draft paper that can be found here:</b> 
 
@@ -56,14 +55,13 @@ Physics-Informed Neural Networks for Multi-Scale Stress Modelling in Geological 
 
 #### How to reproduce these results, or how to apply the method in other fields?
 
-#### Workflow
+#### Guidelines and notes about the notebook(s)
 
-###### Workstep 1: Load raw data, basic processing
+###### Load raw data, basic processing
 ![](/images/raw_data_step1.PNG)
-
 In this project the data comes straingt from a software package in a legacy uncompressed format GRDCL. The data is in good shape so little manipulaion 
 is needed but this step is clearly unique to details of the input. The main output is the data in a more standrd format that we can work with later. 
-In the notebook, the input files are parsed via a class created for this project. The parsing converts the information inside the files into several pandas dataframes for easy processing later. The parser in itself just have one static method that receives as a string the input file and returns a data frame:
+In the notebook: PROCESSING_STRESS, the input files are parsed via a class created for this project. The parsing converts the information inside the files into several pandas dataframes for easy processing later. The parser in itself just have one static method that receives as a string the input file and returns a data frame:
 
 ```python
 class EclipseFileParser:
@@ -80,7 +78,7 @@ data_raw = EclipseFileParser.PetrelEclipseKeywords_to_pandas( data_file );
 ```
 
 Although the data is in good shape, some minimal checking and processing is still due. 
-Here is one example of the code in the notebook performing a basic check. 
+Here is one example of the code in the notebook performing a basic check that one variable is within expected bounds. 
 
 ```python
 
@@ -98,10 +96,18 @@ Finally the code stores the pre-processed data as a feather.
 Once all the files are stored as feathers, the workflow continues with extra pre-processing steps before the data 
 is in the format needed for the neural network training. 
 
-
-###### Workstep 2: Preparing the dataset for training the NN
+###### Preparing the dataset for training the NN
 
 (...)
+
+###### Training the NN
+
+(...)
+
+###### Some results 
+
+(...)
+
 
 #### The full workflow is long. It will be published here little by little. 
 
