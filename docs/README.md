@@ -38,7 +38,7 @@ C: Projections along a vertical line and zoomed-in view. Filled curve correspond
 to the correct solution and the dashed line to the coarse model used for training. 
 </p>
 
-
+    
 ### Details
 
 #### Data Processing. Workflow step 1
@@ -52,7 +52,37 @@ class EclipseFileParser:
     
     @staticmethod 
     def PetrelEclipseKeywords_to_pandas( file_name :str  )->pd.DataFrame:
-        """
-        Converts to a pandas dataframe the data stored as a Petrel file.
-        Note t
+    ...
+This is called in the few first cells of the notebook 
+
+data_raw = EclipseFileParser.PetrelEclipseKeywords_to_pandas( data_file );
+
+Although the data is in good shape, some minimal checking and processing is still due. 
+Here some basic checking of ranges is done:
+
+def is_positive_delegate( collection )-> bool: 
+    result =any( [c.min()<0 for c in collection])
+    return result 
+
+def is_condition( collection, condition )-> bool: 
+    result =any( [condition(c) for c in collection])
+    return result 
+
+def any_nans( df: pd.DataFrame )->bool: 
+    return any( df.isnull().sum() > 0 )
+             
+def check( df: object, checker )->bool:
+    return checker( df )
+    
+print( f"Any nans ? {check( data_raw, any_nans )} ")
+
+eff=[ data_raw[col] for col in data_raw.columns if "EFF" in col or "PRESS" in col ]
+print( f"Any stress negative? {check( eff, is_positive_delegate )} ")
+
+eff=[ data_raw[col] for col in data_raw.columns if "YOUNG" in col ]
+print( f"Any stiffness negative? {check( eff, is_positive_delegate )} ")
+
+eff=[ data_raw[col] for col in data_raw.columns if "POISS" in col ]
+print( f"Any out-of-range Poisson's ratio? { is_condition(eff, lam
+
 
