@@ -54,7 +54,7 @@ class EclipseFileParser:
     ...
 ```
 
-This is called in the few first cells of the notebook 
+This is called near the top of the notebook 
 
 ```python
 data_raw = EclipseFileParser.PetrelEclipseKeywords_to_pandas( data_file );
@@ -64,15 +64,17 @@ Although the data is in good shape, some minimal checking and processing is stil
 Here is one example of the code in the notebook performing a basic check. 
 
 ```python
-(...)
 
+(...)
 eff=[ data_raw[col] for col in data_raw.columns if "POISS" in col ]
 print( f"Any out-of-range Poisson's ratio? { is_condition(eff, lambda item: any(item <0.1) or any(item >0.5)  ) } ")
 (...)
 
 ```
 Finally the code stores the pre-processed data as a feather.
-```
+```python
  %time data_raw.to_feather(output_file_name)
 ```
 
+Once all the files are stored as feathers, the workflow continues with extra pre-processing steps before the data 
+is in the format needed for the neural network training. 
