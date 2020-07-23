@@ -44,7 +44,7 @@ to a stage of  fully connected layers (see paper)</p>
 #### Preliminary results 
 Preliminary results obtained are within  a 2% of error. 
 
-![](FrontPage2.png) 
+![](/images/FrontPage2.png) 
 <p>Coarse model used for training, correct results and predictions in high resolution 
 </p>
 
