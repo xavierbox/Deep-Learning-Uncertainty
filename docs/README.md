@@ -1,4 +1,4 @@
-# Deep Learning for Uncertainty in Stress Modelling: Summary
+# Deep Learning for Uncertainty in Stress Modelling: (In progress)
 
 ## The project 
 This project proposes a methodology to estimate stress in the subsurface by a hybrid method 
@@ -78,3 +78,5 @@ Finally the code stores the pre-processed data as a feather.
 
 Once all the files are stored as feathers, the workflow continues with extra pre-processing steps before the data 
 is in the format needed for the neural network training. 
+
+### the full workflow is really long. I will be published here little by little. 
